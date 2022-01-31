@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
      marginVertical: 7,
      height: 50,
      fontSize: 16,
+     color: '#000',
    }
  });
 

@@ -30,6 +30,7 @@ const ForgotPasswordScreen = () => {
                placeholder="Digite seu Email"
                value={username}
                setValue={setUsername}
+               placeholderTextColor={'#000'}
             />
 
 

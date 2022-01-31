@@ -72,6 +72,7 @@ const SignUpScreen = () => {
                 value={name}
                 placeholder={"Nome Completo"}
                 onChangeText={handleChange('name')}
+                placeholderTextColor={'#000'}
               />
 
               <FormInput
@@ -82,6 +83,8 @@ const SignUpScreen = () => {
                 onBlur={handleBlur('email')}
                 placeholder={"Email"}
                 onChangeText={handleChange('email')}
+                placeholderTextColor={'#000'}
+
               />
               <FormInput
                 style={styles.input}
@@ -92,14 +95,21 @@ const SignUpScreen = () => {
                 secureTextEntry
                 placeholder={"Senha"}
                 onChangeText={handleChange('password')}
+                placeholderTextColor={'#000'}
+
               />
               <PhoneInput
                 containerStyle={styles.input_phone}
                 placeholder={"Telefone"}
+                textInputProps={styles.input_phone_cp}
+                textInputStyle={styles.input_phone_cp}
+                codeTextStyle={styles.input_phone_cp}
+
                 label='Telefone'
                 defaultCode="BR"
                 value={phone}
                 onChangeFormattedText={handleChange('phone')}
+
               />
 
               <Text style={styles.termos}>Ao continuar, confirmo que li e concordo com os
@@ -133,6 +143,10 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginVertical: 7,
     color: '#000',
+  },
+  input_phone_cp: {
+    color: '#000',
+    placeholderTextColor: '#000',
   },
   termos: {
     marginTop: 12,
