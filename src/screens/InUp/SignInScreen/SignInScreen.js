@@ -35,16 +35,16 @@ const SignInScreen = () => {
     onSubmit: async values => {
       try {
 
-        const { data } = await api.post('login', values)
+        /* const { data } = await api.post('login', values)
         console.log(values)
 
         setAuth(data)
-
+ */
         navigation.navigate("HomeScreen");
 
       } catch (error) {
-        setState('Login ou senha invalidos')
-        console.log(error)
+        /* setState('Login ou senha invalidos')
+        console.log(error) */
       }
     },
   })

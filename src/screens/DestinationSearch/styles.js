@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#eee',
     marginVertical: 5,
     marginLeft: 20,
+    color: '#000',
   },
 
   separator: {
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
     marginRight: 15,
   },
   locationText: {
-
+    color: '#000'
   },
 
   circle: {

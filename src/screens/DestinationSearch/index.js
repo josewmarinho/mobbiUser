@@ -40,6 +40,9 @@ const DestinationSearch = (props) => {
 
         <GooglePlacesAutocomplete
           placeholder="De?"
+          textInputProps={{
+            placeholderTextColor: '#000',
+          }}
           onPress={(data, details = null) => {
             setOriginPlace({data, details});
           }}
@@ -65,6 +68,9 @@ const DestinationSearch = (props) => {
 
         <GooglePlacesAutocomplete
           placeholder="Para?"
+          textInputProps={{
+            placeholderTextColor: '#000',
+          }}
           onPress={(data, details = null) => {
             setDestinationPlace({data, details});
           }}
